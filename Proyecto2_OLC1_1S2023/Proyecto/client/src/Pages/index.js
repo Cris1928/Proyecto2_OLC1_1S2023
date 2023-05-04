@@ -51,12 +51,17 @@ function Index() {
   
 
 
-    
+     
 
   };
 
   const handlerClear = () => {
     setResponse("");
+    console.log(err.Errores);
+    err.Errores=[];
+    console.log(err.Errores);
+
+
   };
 
   const buttonTraducir = (

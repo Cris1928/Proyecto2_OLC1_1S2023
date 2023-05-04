@@ -137,6 +137,7 @@ truncate { console.log("Reconocio : "+ yytext); return 'TRUNCATE'}
 .     {                 console.log("Error Lexico "+yytext
                         +" linea "+yylineno
                         +" columna "+(yylloc.last_column+1));
+                        
 
                         new errores.default('Lexico', 'El caracter ' + yytext  + ' no forma parte del lenguaje',  yylineno+1, yylloc.last_column+1);
                         
