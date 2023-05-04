@@ -1,0 +1,56 @@
+==========================================================================================================
+
+
+npm init -y 
+npm i --save-dev typescript ts-node nodemon
+npx tsc --init
+npm i --save express dotenv morgan cors body-parser config lodash
+npm i --save-dev @types/express @types/cors @types/morgan @types/node @types/config @types/lodash copy rimraf
+
+
+==========================================================================================================
+
+/**
+*Comando para iniciar el proyecto de Node.
+*/
+npm init -y 
+
+
+/**
+*TENDENCIAS DE DESARROLLO (TypeScript, node y nodemon):
+*Sirve al momento de estar desarrollando que permite recompilar
+*el proyecto sin tener que apagarlo y volverlo a encender.
+*/
+npm i --save-dev typescript ts-node nodemon
+
+
+/**
+*Con este comando iniciamos nuestro proyecto de typescript
+*/
+npx tsc --init
+
+
+/**
+*DEPENDENCIAS GLOBALES (express, dontenv, morgan, CORS, body-parser, config y lodash):
+*EXPRESS: nos ayuda a levantar los servidores como tal configurarlos y levantarlos.
+*DONTENV: para manejar las variables de entorno.
+*MORGAN: verifica el trafico en nuestro servidor.
+*CORS: permite la entrada y salida de tráfico.
+*BODY-PARSER: para parsear las entradas como json.
+*CONFIG: maneja como tal las variables de configuraciónl.
+*LODASH: es para tratar los archivos json mas fácil.
+*/
+npm i --save express dotenv morgan cors body-parser config lodash
+
+
+/**
+*NOTA: cuando utilizamos typescript por lo general siempre hay que utilizar 
+*los tipos porque typescript es tipado y se necesitan las librerias para manejar
+*los tipos como tal como un tipo string, int, boolean... Tambien se pueden manejar
+*request tipos respons al momento de trabajar con servidores.
+*
+*rimraf: nos ayuda a manipular archivos y objetos desde los comandos de node.json
+*tiene soporte para todos los SO .
+*copy: nos ayuda a copiar archivos.
+*/
+npm i --save-dev @types/express @types/cors @types/morgan @types/node @types/config @types/lodash copy rimraf
